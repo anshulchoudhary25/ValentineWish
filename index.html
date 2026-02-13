@@ -47,6 +47,16 @@
           <span>S</span>
           <span>O</span>
         </p>
+        <audio id="bg-music" loop>
+  <source src="music/background.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", function () {
+    const music = document.getElementById("bg-music");
+    music.play().catch(() => {});
+  }, { once: true });
+</script>
       </div>
       <div class="six">
         <img src="img/vector.jpg" alt="" class = "girl-dp" id="imagePath" />
